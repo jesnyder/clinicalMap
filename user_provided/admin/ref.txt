@@ -1,0 +1,10 @@
+
+
+
+# add layers - Leaflet tutorial and example
+https://leafletjs.com/examples/layers-control/
+
+
+Creating animated maps
+https://github.com/skeate/Leaflet.timeline
+https://programminghistorian.org/en/lessons/mapping-with-python-leaflet

@@ -1,0 +1,27 @@
+name,path
+
+# admin referenced
+ref_variable,user_provided admin ref_variables.csv
+
+# list_trials referenced
+clinical_src,user_provided clinicalTrialsDownload
+
+# list_trials created
+trials,program_generated trials.json
+location,program_generated locations.csv
+
+# query_openmaps created
+geolocated,program_generated geolocated.csv
+location_missing,program_generated location_missing.csv
+geolocated_json,program_generated geolocated.json
+
+# write_geojson created
+geojson,program_generated geojson.json
+
+# assign_groups referenced
+allo_terms,user_provided admin allo_terms.csv
+auto_terms,user_provided admin auto_terms.csv
+
+# assign_group created
+groups,program_generated groups groups.csv
+js,docs js

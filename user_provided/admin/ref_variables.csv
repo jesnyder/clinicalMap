@@ -1,0 +1,14 @@
+name,term
+colorOrange,0.941176$$$0.3254$$$0.1372
+colorPurple,0.137254901961$$$0.105882352941$$$0.3764705882
+colorBlueDark,05$$$0.6$$$0.8470588
+colorBlueLight,0$$$0.737254$$$0.905882
+colorRed,1$$$0$$$0
+colorGray,0.9137254$$$0.882352941$$$0.87450980
+groups,all$$$MSC$$$PD$$$TE$$$EV$$$GE
+all, $$$  $$$
+MSC,mesenchymal$$$MSC$$$MSCs
+EV,exosome$$$exosomes$$$extracellular vesicles$$$extracellular vesicles$$$secretome
+GE,genetic engineering$$$synthetic biology$$$genetically modified$$$lentiviral transduction$$$RoosterGem$$$crispr$$$gene engineered
+PD,process development$$$optimization$$$scalable$$$bioreactor
+TE,tissue engineering$$$bioprinting$$$tissue construct$$$tissue constructs$$$scaffold$$$3D Printing

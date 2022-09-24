@@ -1,60 +1,43 @@
+var cities = L.layerGroup();
+var layerAllo = L.layerGroup();
+var layerAuto = L.layerGroup();
+var layerBoth = L.layerGroup();
+var layerUndeclared = L.layerGroup();
+
+var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="https://clinicaltrials.gov/">NIH ClinicalTrials.gov</a>';
+var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+var streets = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	});
+
+var map = L.map('map', {
+		center: [0, 0],
+		zoom: 2,
+		layers: [osm]
+	});
+
+var baseLayers = {
+		'OpenStreetMap': osm,
+		'Streets': streets
+	};
+
+var overlays = {
+    'Allogeneic MSC Source': layerAllo,
+    'Autologous MSC Source': layerAuto,
+    'Allo and Auto MSC Source': layerBoth,
+    'Undeclared MSC Source': layerUndeclared,
+	};
+
+var layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+var satellite = L.tileLayer(mbUrl, {id: 'mapbox/satellite-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+layerControl.addBaseLayer(satellite, 'Satellite');
 
 
-
-  function getColorFor(str) {
-    // java String#hashCode
-    var hash = 0;
-    for (var i = 0; i < str.length; i++) {
-      hash = str.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    var red = (hash >> 24) & 0xff;
-    var grn = (hash >> 16) & 0xff;
-    var blu = (hash >> 8) & 0xff;
-    return "rgb(" + red + "," + grn + "," + blu + ")";
-  }
-  var osmUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
-  var osmAttrib =
-    '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-  var osm = L.tileLayer(osmUrl, { maxZoom: 18, attribution: osmAttrib });
-  var map = L.map("map", {
-    layers: [osm],
-    center: new L.LatLng(0, 0),
-    zoom: 2,
-  });
-
-    /*
-  var timeline;
-  var timelineControl;
-
-  function onLoadData(data) {
-    timeline = L.timeline(data, {
-      style: function (data) {
-        return {
-          stroke: false,
-          color: getColorFor(data.properties.name),
-          fillOpacity: 0.5,
-        };
-      },
-      waitToUpdateMap: true,
-      onEachFeature: function (feature, layer) {
-        layer.bindTooltip(feature.properties.name);
-      },
-    });
-
-    timelineControl = L.timelineSliderControl({
-      formatOutput: function (date) {
-        return new Date(date).toLocaleDateString();
-      },
-      enableKeyboardControls: true,
-    });
-    timeline.addTo(map);
-    timelineControl.addTo(map);
-    timelineControl.addTimelines(timeline);
-  }
-
-  */
-
-  function onEachFeature(feature, layer) {
+function onEachFeature(feature, layer) {
       layer.on({
         mouseover: highlightFeature,
         mouseout: resetHighlight,
@@ -63,11 +46,11 @@
     }
 
 
-  function trialStyle (feature) {
+function trialStyle (feature) {
       return feature.properties && feature.properties.style;
     }
 
-  function onEachTrial(feature, layer) {
+function onEachTrial(feature, layer) {
     var aff = feature.properties.aff;
     var url = feature.properties.url;
     var name = feature.properties.name;
@@ -89,7 +72,7 @@
           layer.bindPopup(popupContent);
         }
 
-  function trialToLayer(feature, latlng) {
+function trialToLayer(feature, latlng) {
     //map.createPane("locationMarker");
     //map.getPane("locationMarker").style.zIndex = 999;
     return L.circleMarker(latlng, {
@@ -103,51 +86,36 @@
     });
   }
 
-
-  /*
-  var geojson_all = L.geoJson(groupall, {
-    style: trialStyle,
-    onEachFeature: onEachTrial,
-    pointToLayer: trialToLayer,
-  }).addTo(map).addTo(trialall);
-
-
-  var geojson_undeclared = L.geoJson(groupboth, {
-    style: trialStyle,
-    onEachFeature: onEachTrial,
-    pointToLayer: trialToLayer,
-  }).addTo(map);
-
-*/
 var slider = L.timelineSliderControl({
 formatOutput: function (date) {
   return moment(date).format("YYYY-MM-DD");
 },
 });
+
 map.addControl(slider);
 
 var pointersUndeclared = L.timeline(groupundeclared, {
 style: trialStyle,
 onEachFeature: onEachTrial,
 pointToLayer: trialToLayer,
-}).addTo(map);
+}).addTo(map).addTo(layerUndeclared);
 
 var pointersAllo = L.timeline(groupallo, {
 style: trialStyle,
 onEachFeature: onEachTrial,
 pointToLayer: trialToLayer,
-}).addTo(map);
+}).addTo(map).addTo(layerAllo);
 
 var pointersAuto = L.timeline(groupauto, {
 style: trialStyle,
 onEachFeature: onEachTrial,
 pointToLayer: trialToLayer,
-}).addTo(map);
+}).addTo(map).addTo(layerAuto);
 
 var pointersBoth = L.timeline(groupboth, {
 style: trialStyle,
 onEachFeature: onEachTrial,
 pointToLayer: trialToLayer,
-}).addTo(map);
+}).addTo(map).addTo(layerBoth);
 
 slider.addTimelines(pointersUndeclared, pointersAllo, pointersAuto, pointersBoth);

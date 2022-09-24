@@ -187,7 +187,7 @@ def find_date(trial):
 
     month_names = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Sep', 'Oct', 'Nov', 'Dec']
 
-    date_fields = ['Start Date', 'First Posted']
+    date_fields = ['Start Date']
 
     for field in date_fields:
 
@@ -211,7 +211,9 @@ def find_date(trial):
                     i = month_names.index(name) + 1
                     month = i
 
-            if int(year) > 1900 and int(month) > 0 and int(day) > 0:
+            if int(year) > 1900:
+                if month == 0: month = 1
+                if day == 0: day = 1
                 return(int(year), int(month), int(day))
 
     if month == 0: month = 1

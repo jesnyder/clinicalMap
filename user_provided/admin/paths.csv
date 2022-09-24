@@ -25,3 +25,17 @@ auto_terms,user_provided admin auto_terms.csv
 # assign_group created
 groups,program_generated groups groups.csv
 js,docs js
+
+
+# year_counts created
+year_counts_pdf,program_generated counts year_counts_pdf.csv
+year_counts_cdf,program_generated counts year_counts_cdf.csv
+count_percent,program_generated counts count_percent.csv
+enrolled_percent,program_generated counts enrolled_percent.csv
+
+pdf_js,docs js pdf.js
+cdf_js,docs js cdf.js
+enrolled_pdf,docs js enrolled_pdf.js
+pdf_js_enrolled,docs js pdf_js_enrolled.js
+cdf_js_count,docs js cdf_js_count.js
+cdf_js_enroll,docs js cdf_js_enroll.js

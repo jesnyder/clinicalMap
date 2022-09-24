@@ -1,5 +1,5 @@
 {
-      "item_count": 1527,
+      "item_count": 1529,
       "response": [
             {
                   "place_id": 215877118,
@@ -3593,6 +3593,24 @@
                   "importance": 0.0001
             },
             {
+                  "place_id": 210324958,
+                  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+                  "osm_type": "way",
+                  "osm_id": 471124448,
+                  "boundingbox": [
+                        "37.507583",
+                        "37.5078383",
+                        "127.1031292",
+                        "127.1035208"
+                  ],
+                  "lat": "37.50771705",
+                  "lon": "127.10332700284029",
+                  "display_name": "Hyundai Repair Center, \uc11d\ucd0c\ub3d9, \uc1a1\ud30c\uad6c, \uc11c\uc6b8, 05609, \ub300\ud55c\ubbfc\uad6d",
+                  "class": "landuse",
+                  "type": "industrial",
+                  "importance": 0.19999999999999996
+            },
+            {
                   "place_id": 84166550,
                   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
                   "osm_type": "node",
@@ -3791,7 +3809,7 @@
                   ],
                   "lat": "41.50217195",
                   "lon": "-81.61981946090904",
-                  "display_name": "Cleveland Clinic, 9500, Euclid Avenue, East Eighty-Ninth Street Historic District, Hough, Cleveland, Cuyahoga County, Ohio, 44195, United States",
+                  "display_name": "Cleveland Clinic, 9500, Euclid Avenue, East Eighty-Ninth Street Historic District, Cleveland, Cuyahoga County, Ohio, 44195, United States",
                   "class": "amenity",
                   "type": "hospital",
                   "importance": 0.6301,
@@ -14080,23 +14098,23 @@
                   "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_boundary_administrative.p.20.png"
             },
             {
-                  "place_id": 299001923,
+                  "place_id": 132730,
                   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
-                  "osm_type": "relation",
-                  "osm_id": 3352040,
+                  "osm_type": "node",
+                  "osm_id": 29941752,
                   "boundingbox": [
-                        "42.9981494",
-                        "43.171916",
-                        "-89.571661",
-                        "-89.246643"
+                        "42.914761",
+                        "43.234761",
+                        "-89.5437613",
+                        "-89.2237613"
                   ],
                   "lat": "43.074761",
                   "lon": "-89.3837613",
-                  "display_name": "Madison, Dane County, Wisconsin, United States",
-                  "class": "boundary",
-                  "type": "administrative",
+                  "display_name": "Madison, Dane County, Wisconsin, 53703, United States",
+                  "class": "place",
+                  "type": "city",
                   "importance": 1.01643378870957,
-                  "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_boundary_administrative.p.20.png"
+                  "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_place_city.p.20.png"
             },
             {
                   "place_id": 237888636,
@@ -14603,7 +14621,7 @@
                   ],
                   "lat": "29.6328784",
                   "lon": "-82.34901329340119",
-                  "display_name": "University of Florida, West University Avenue, Gainesville, Alachua County, Florida, 32611, United States",
+                  "display_name": "University of Florida, East Panhellenic Drive, Gainesville, Alachua County, Florida, 32611, United States",
                   "class": "amenity",
                   "type": "university",
                   "importance": 1.320538725277712,
@@ -14667,23 +14685,23 @@
                   "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_boundary_administrative.p.20.png"
             },
             {
-                  "place_id": 299001923,
+                  "place_id": 132730,
                   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
-                  "osm_type": "relation",
-                  "osm_id": 3352040,
+                  "osm_type": "node",
+                  "osm_id": 29941752,
                   "boundingbox": [
-                        "42.9981494",
-                        "43.171916",
-                        "-89.571661",
-                        "-89.246643"
+                        "42.914761",
+                        "43.234761",
+                        "-89.5437613",
+                        "-89.2237613"
                   ],
                   "lat": "43.074761",
                   "lon": "-89.3837613",
-                  "display_name": "Madison, Dane County, Wisconsin, United States",
-                  "class": "boundary",
-                  "type": "administrative",
+                  "display_name": "Madison, Dane County, Wisconsin, 53703, United States",
+                  "class": "place",
+                  "type": "city",
                   "importance": 1.01643378870957,
-                  "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_boundary_administrative.p.20.png"
+                  "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_place_city.p.20.png"
             },
             {
                   "place_id": 299572836,
@@ -16295,6 +16313,24 @@
                   "type": "administrative",
                   "importance": 0.6320547624842499,
                   "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_boundary_administrative.p.20.png"
+            },
+            {
+                  "place_id": 210324958,
+                  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+                  "osm_type": "way",
+                  "osm_id": 471124448,
+                  "boundingbox": [
+                        "37.507583",
+                        "37.5078383",
+                        "127.1031292",
+                        "127.1035208"
+                  ],
+                  "lat": "37.50771705",
+                  "lon": "127.10332700284029",
+                  "display_name": "Hyundai Repair Center, \uc11d\ucd0c\ub3d9, \uc1a1\ud30c\uad6c, \uc11c\uc6b8, 05609, \ub300\ud55c\ubbfc\uad6d",
+                  "class": "landuse",
+                  "type": "industrial",
+                  "importance": 0.19999999999999996
             },
             {
                   "place_id": 297949443,
@@ -25782,7 +25818,7 @@
                   ],
                   "lat": "29.6328784",
                   "lon": "-82.34901329340119",
-                  "display_name": "University of Florida, West University Avenue, Gainesville, Alachua County, Florida, 32611, United States",
+                  "display_name": "University of Florida, East Panhellenic Drive, Gainesville, Alachua County, Florida, 32611, United States",
                   "class": "amenity",
                   "type": "university",
                   "importance": 1.320538725277712,
@@ -26904,42 +26940,42 @@
                   "icon": "https://nominatim.openstreetmap.org/ui/mapicons/health_hospital.p.20.png"
             },
             {
-                  "place_id": 299001923,
+                  "place_id": 132730,
                   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
-                  "osm_type": "relation",
-                  "osm_id": 3352040,
+                  "osm_type": "node",
+                  "osm_id": 29941752,
                   "boundingbox": [
-                        "42.9981494",
-                        "43.171916",
-                        "-89.571661",
-                        "-89.246643"
+                        "42.914761",
+                        "43.234761",
+                        "-89.5437613",
+                        "-89.2237613"
                   ],
                   "lat": "43.074761",
                   "lon": "-89.3837613",
-                  "display_name": "Madison, Dane County, Wisconsin, United States",
-                  "class": "boundary",
-                  "type": "administrative",
+                  "display_name": "Madison, Dane County, Wisconsin, 53703, United States",
+                  "class": "place",
+                  "type": "city",
                   "importance": 1.01643378870957,
-                  "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_boundary_administrative.p.20.png"
+                  "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_place_city.p.20.png"
             },
             {
-                  "place_id": 299001923,
+                  "place_id": 132730,
                   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
-                  "osm_type": "relation",
-                  "osm_id": 3352040,
+                  "osm_type": "node",
+                  "osm_id": 29941752,
                   "boundingbox": [
-                        "42.9981494",
-                        "43.171916",
-                        "-89.571661",
-                        "-89.246643"
+                        "42.914761",
+                        "43.234761",
+                        "-89.5437613",
+                        "-89.2237613"
                   ],
                   "lat": "43.074761",
                   "lon": "-89.3837613",
-                  "display_name": "Madison, Dane County, Wisconsin, United States",
-                  "class": "boundary",
-                  "type": "administrative",
+                  "display_name": "Madison, Dane County, Wisconsin, 53703, United States",
+                  "class": "place",
+                  "type": "city",
                   "importance": 1.01643378870957,
-                  "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_boundary_administrative.p.20.png"
+                  "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_place_city.p.20.png"
             },
             {
                   "place_id": 299916981,
@@ -26961,23 +26997,23 @@
                   "icon": "https://nominatim.openstreetmap.org/ui/mapicons/education_university.p.20.png"
             },
             {
-                  "place_id": 299001923,
+                  "place_id": 132730,
                   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
-                  "osm_type": "relation",
-                  "osm_id": 3352040,
+                  "osm_type": "node",
+                  "osm_id": 29941752,
                   "boundingbox": [
-                        "42.9981494",
-                        "43.171916",
-                        "-89.571661",
-                        "-89.246643"
+                        "42.914761",
+                        "43.234761",
+                        "-89.5437613",
+                        "-89.2237613"
                   ],
                   "lat": "43.074761",
                   "lon": "-89.3837613",
-                  "display_name": "Madison, Dane County, Wisconsin, United States",
-                  "class": "boundary",
-                  "type": "administrative",
+                  "display_name": "Madison, Dane County, Wisconsin, 53703, United States",
+                  "class": "place",
+                  "type": "city",
                   "importance": 1.01643378870957,
-                  "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_boundary_administrative.p.20.png"
+                  "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_place_city.p.20.png"
             },
             {
                   "place_id": 299916981,

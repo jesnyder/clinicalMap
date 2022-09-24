@@ -5,6 +5,7 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="js/leaflet.timeline.js"></script>
@@ -17,7 +18,7 @@
       }
       #map {
         width: 100vw;
-        height: 70vh;
+        height: 90vh;
       }
       .leaflet-bottom.leaflet-left {
         width: 100%;
@@ -54,9 +55,27 @@
 				<p><b>Global Map of Clinical Trials</b><br>Momentum gaining behind mesenchymal stromal cells for clinical trials.</p>
 		</div>
 
-		<!-- still map with layers -->
-		<div id="map2"></div>
-		<script type="text/javascript"  src="js/map2.js"></script>
+    <canvas id="line-chart" ></canvas>
+    <script src="js/pdf.js"></script>
+
+    <canvas id="line-chart-enroll" ></canvas>
+    <script src="js/pdf_js_enrolled.js"></script>
+
+    <canvas id="line-chart-cdf_count" ></canvas>
+    <script src="js/cdf_js_count.js"></script>
+
+    <canvas id="line-chart-cdf_enroll" ></canvas>
+    <script src="js/cdf_js_enroll.js"></script>
+
+		<!-- still map with layers
+    <div id="chartContainer" style="height: 500px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+
+
+    <div id="text" style="width:100% ; margin-left: 3%; font-family: Calibri;">
+        <h1>Making the Map</h1>
+        <p><b>Method</b><br>The US National Institute of Health (NIH) maintains a database of clinical trials. We searched this repository, ClinicalTrials.gov, using the "Intervention" field looking for "mesenchymal stromal" or "mesenchymal strem" or "allogeneic mesenchymal" or 'autologous mesenchymal'. Results from different searches were coregistered using the url to prevent double-counting of any one trial. The trials were geolocated based on the location of the trial, this can be and often is distinct from the sponsor of the study. Many trials had multiple locations and so those appear multiple times on the map. The size of the circle pointer annotating the trial location is determined by the number of participants enrolled in the trial.  </p>
+    </div>
 
   </body>
 </html>

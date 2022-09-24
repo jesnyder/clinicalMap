@@ -33,21 +33,28 @@ def query_openmaps():
 
     # establish locations df
     df = retrieve_df('location')
-    df['lat'] = [0]*len(df['location'])
-    df['lon'] = [0]*len(df['lat'])
 
-    locs = list(df['location'])
-    for loc in locs:
+    found_locs = []
+    lats = []
+    lons = []
+
+    locations = list(df['location'])
+    for loc in locations:
 
         lat, lon, response = lookup_openmaps(loc)
 
         print('lat = ')
         print(lat)
 
-        i = locs.index(loc)
-        df.iat[i, 'lat'] = str(float(lat))
-        df.iat[i, 'lon'] = str(float(lon))
-        df.to_csv(retrieve_path('geolocated'))
+        found_locs.append(str(loc))
+        lats.append(lat)
+        lons.append(lon)
+
+        df_temp = pd.DataFrame()
+        df_temp['location'] = found_locs
+        df_temp['lat'] = lats
+        df_temp['lon'] = lons
+        df_temp.to_csv(retrieve_path('geolocated'))
 
         if lat == 0: report_missing(loc)
 

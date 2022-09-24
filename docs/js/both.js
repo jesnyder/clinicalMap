@@ -13,19 +13,19 @@ var  groupboth = {
                 "enrolled": 37,
                 "radius": 16,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(25, 178, 212)",
+                "fillColor": "rgb(15, 192, 220)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13984,
                 "paneLabel": "pane13984",
                 "start": "2011-05-19",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -80,
-                    25
+                    -80.19362,
+                    25.7741728
                 ]
             }
         },
@@ -38,19 +38,19 @@ var  groupboth = {
                 "enrolled": 120,
                 "radius": 20,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(5, 170, 238)",
+                "fillColor": "rgb(5, 164, 217)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13980,
                 "paneLabel": "pane13980",
                 "start": "2021-05-26",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2,
-                    41
+                    2.1505425,
+                    41.3881615
                 ]
             }
         },
@@ -63,19 +63,19 @@ var  groupboth = {
                 "enrolled": 120,
                 "radius": 20,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(5, 170, 238)",
+                "fillColor": "rgb(5, 164, 217)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13980,
                 "paneLabel": "pane13980",
                 "start": "2021-05-26",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -3,
-                    40
+                    -3.7035825,
+                    40.4167047
                 ]
             }
         },
@@ -88,19 +88,19 @@ var  groupboth = {
                 "enrolled": 120,
                 "radius": 20,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(5, 170, 238)",
+                "fillColor": "rgb(5, 164, 217)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13980,
                 "paneLabel": "pane13980",
                 "start": "2021-05-26",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -3,
-                    40
+                    -3.7035825,
+                    40.4167047
                 ]
             }
         },
@@ -113,19 +113,19 @@ var  groupboth = {
                 "enrolled": 120,
                 "radius": 20,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(5, 170, 238)",
+                "fillColor": "rgb(5, 164, 217)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13980,
                 "paneLabel": "pane13980",
                 "start": "2021-05-26",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -3,
-                    40
+                    -3.7035825,
+                    40.4167047
                 ]
             }
         },
@@ -138,19 +138,19 @@ var  groupboth = {
                 "enrolled": 120,
                 "radius": 20,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(5, 170, 238)",
+                "fillColor": "rgb(5, 164, 217)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13980,
                 "paneLabel": "pane13980",
                 "start": "2021-05-26",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -1,
-                    37
+                    -1.1625427931490806,
+                    37.93215975
                 ]
             }
         },
@@ -163,19 +163,19 @@ var  groupboth = {
                 "enrolled": 120,
                 "radius": 20,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(5, 170, 238)",
+                "fillColor": "rgb(5, 164, 217)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13980,
                 "paneLabel": "pane13980",
                 "start": "2021-05-26",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -4,
-                    39
+                    -4.8379791,
+                    39.3260685
                 ]
             }
         },
@@ -188,19 +188,19 @@ var  groupboth = {
                 "enrolled": 120,
                 "radius": 20,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(5, 170, 238)",
+                "fillColor": "rgb(5, 164, 217)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13980,
                 "paneLabel": "pane13980",
                 "start": "2021-05-26",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -1,
-                    42
+                    -1.6440304,
+                    42.8182536
                 ]
             }
         },
@@ -213,19 +213,19 @@ var  groupboth = {
                 "enrolled": 120,
                 "radius": 20,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(5, 170, 238)",
+                "fillColor": "rgb(5, 164, 217)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13980,
                 "paneLabel": "pane13980",
                 "start": "2021-05-26",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -5,
-                    40
+                    -5.6640182,
+                    40.9651572
                 ]
             }
         },
@@ -238,19 +238,19 @@ var  groupboth = {
                 "enrolled": 120,
                 "radius": 20,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(5, 170, 238)",
+                "fillColor": "rgb(5, 164, 217)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13980,
                 "paneLabel": "pane13980",
                 "start": "2021-05-26",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -4,
-                    41
+                    -4.728562,
+                    41.6521328
                 ]
             }
         },
@@ -263,19 +263,19 @@ var  groupboth = {
                 "enrolled": 15,
                 "radius": 13,
                 "color": "rgb(100, 100, 100)",
-                "fillColor": "rgb(10, 185, 245)",
+                "fillColor": "rgb(2, 202, 235)",
                 "opacity": 0.8,
                 "fillOpacity": 0.8,
                 "zindex": 13987,
                 "paneLabel": "pane13987",
                 "start": "2020-09-05",
-                "end": "2024-09-30"
+                "end": "2023-09-30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    106,
-                    -6
+                    106.84287153600738,
+                    -6.18233995
                 ]
             }
         }

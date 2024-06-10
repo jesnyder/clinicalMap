@@ -11,7 +11,7 @@ def main():
     Map clinical trials
     """
 
-    tasks = []
+    tasks = [0, 1, 3, 4, 5]
     #tasks.append('openmaps')
 
     # list trials
@@ -28,6 +28,8 @@ def main():
 
     # tally totals
     if 4 in tasks: year_counts()
+
+ 
 
 
 if __name__ == "__main__":
